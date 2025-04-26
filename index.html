@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>John Watson - UI Designer & Web Developer</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <Link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <!-- Header & Navigation -->
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <i class="fas fa-layer-group me-2"></i> UI Portfolio
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                Blog
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Latest Posts</a></li>
+                <li><a class="dropdown-item" href="#">Categories</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                Pages
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#portfolio">Portfolio</a></li>
+                <li><a class="dropdown-item" href="#skills">Skills</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+          <a href="mailto:victorgathecha@gmail.com?subject=Job%20Opportunity&body=Hello%20John,%20I%20would%20like%20to%20discuss%20a%20potential%20opportunity." class="btn btn-primary me-3" target="_blank">Hire me</a>
+          <div class="nav-icons ms-3">
+            <a href="#" id="search-toggle"><i class="fas fa-search"></i></a>
+            <a href="#" id="theme-toggle"><i class="fas fa-moon"></i></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Search Modal -->
+  <div class="search-modal" id="search-modal">
+    <div class="search-modal-content">
+      <span class="close-search" id="close-search">&times;</span>
+      <form id="search-form">
+        <input type="text" id="search-input" placeholder="Search here..." autocomplete="off" autofocus>
+        <div class="search-results" id="search-results"></div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section id="hero" class="py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <div class="hero-content">
+            <h4 class="mb-2">Hi, I'm John Watson</h4>
+            <h1 class="mb-4">Web Designer</h1>
+            <p class="mb-4">I love Graphic design and Photography and have been working on my portfolio since 2016. I can give your business a new Creative start right away!</p>
+            <div class="hero-buttons">
+              <a href="mailto:victorgathecha@gmail.com?subject=Job%20Opportunity&body=Hello%20John,%20I%20would%20like%20to%20discuss%20a%20potential%20opportunity." class="btn btn-primary me-3" target="_blank">Hire me</a>
+
+              <a href="#portfolio" class="btn btn-outline-light">My Portfolio</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="hero-image">
+            <img style="margin-top: 50px;margin-bottom:-45px;height:600px;" src="./images/1.png" alt="John Watson" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-5">
+          <div class="about-image">
+            <img src="./images/2.png" style="margin-left: 270px;" alt="John Watson Profile" class="img-fluid">
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <div class="about-content">
+            <div class="section-heading mb-4">
+              <span>MY BIOGRAPHY</span>
+              <h2 style="font-size: 30px;">A Lead UI Designer & Web Developer Based In UK</h2>
+            </div>
+            <p class="mb-4" style="font-size: 14px; margin-top: -13px;">I love Graphic design and Photography and have been working on my portfolio since 2016. I can give your business a new Creative start right away! Contact me and we will discuss your projects!</p>
+            
+            <div class="personal-info row mb-4">
+              <div class="col-md-6">
+                <p><strong>Name:</strong> John Watson</p>
+                <p><strong>Email:</strong> watson@outlook.com</p>
+              </div>
+              <div class="col-md-6">
+                <p><strong>From:</strong> London, UK</p>
+                <p><strong>Phone:</strong> +12 345 678 9900</p>
+              </div>
+            </div>
+            
+            <div class="social-links">
+              <h5 style="margin-top: -20px;">Follow me on:</h5>
+              <div class="d-flex">
+                <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+            
+            <div class="about-buttons mt-4">
+              <a href="mailto:victorgathecha@gmail.com?subject=Job%20Opportunity&body=Hello%20John,%20I%20would%20like%20to%20discuss%20a%20potential%20opportunity." class="btn btn-primary me-3" target="_blank">Hire me</a>
+               <a href="./resume.pdf" download="John_Watson_CV.pdf" class="btn btn-outline-secondary">Download CV</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-5">
+    <div class="container">
+      <div class="section-heading text-center mb-5">
+        <h2>What I Do For You</h2>
+      </div>
+      
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-laptop-code"></i>
+            </div>
+            <h3>Web Development</h3>
+            <p>Get UI personalized code where top notch front-end designs meet responsive layouts and clean code.</p>
+          </div>
+        </div>
+        
+        <div class="col-md-4 mb-4">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-mobile-alt"></i>
+            </div>
+            <h3>App Development</h3>
+            <p>Get UI personalized mobile online store that loads super-fast and provides clean design appearance.</p>
+          </div>
+        </div>
+        
+        <div class="col-md-4 mb-4">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-camera"></i>
+            </div>
+            <h3>Photography</h3>
+            <p>Get UI personalized shots where top notch photos meet artistic vision and professional editing skills.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="text-center mt-4">
+        <a href="#" class="btn btn-more">
+          More Services <i class="fas fa-arrow-right ms-2"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Skills Section -->
+  <section id="skills" class="py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <div class="skills-images">
+            <div class="skill-image-top mb-4">
+              <img src="https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Skills" class="img-fluid rounded">
+            </div>
+            <div class="skill-image-bottom">
+              <img src="https://images.pexels.com/photos/669996/pexels-photo-669996.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Skills" class="img-fluid rounded">
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-6">
+          <div class="skills-content">
+            <div class="section-heading mb-4">
+              <span>MY SKILLS</span>
+              <h2>My Featured Skills</h2>
+            </div>
+            
+            <p class="mb-4">I specialize in Branding and Strategy, and am passionate about creating awesome Portfolio work. I'm always ready to impress the audience with my Creativity.</p>
+            
+            <div class="skill-bars">
+              <div class="skill-item mb-4">
+                <span class="skill-name">UI/UX Design</span>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 85%"></div>
+                </div>
+              </div>
+              
+              <div class="skill-item mb-4">
+                <span class="skill-name">Ideas & Technology</span>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 75%"></div>
+                </div>
+              </div>
+              
+              <div class="skill-item mb-4">
+                <span class="skill-name">Branding Design</span>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 90%"></div>
+                </div>
+              </div>
+              
+              <div class="skill-item mb-4">
+                <span class="skill-name">Responsive Web Design</span>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 80%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Specialties Section -->
+  <section id="specialties" class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 mb-5 mb-lg-0">
+          <div class="specialties-content">
+            <div class="row">
+              <div class="col-md-6 mb-4">
+                <div class="specialty-card">
+                  <div class="specialty-icon">
+                    <i class="fas fa-code"></i>
+                  </div>
+                  <h4>Web Development</h4>
+                  <p>Lorem ipsum dolere amet haere sint rullam est vidicos et pulcou.</p>
+                </div>
+              </div>
+              
+              <div class="col-md-6 mb-4">
+                <div class="specialty-card">
+                  <div class="specialty-icon">
+                    <i class="fas fa-pencil-ruler"></i>
+                  </div>
+                  <h4>Design Trends</h4>
+                  <p>Lorem ipsum dolere amet haere sint rullam est vidicos et pulcou.</p>
+                </div>
+              </div>
+              
+              <div class="col-md-6 mb-4">
+                <div class="specialty-card">
+                  <div class="specialty-icon">
+                    <i class="fas fa-chart-line"></i>
+                  </div>
+                  <h4>Research & Analysis</h4>
+                  <p>Lorem ipsum dolere amet haere sint rullam est vidicos et pulcou.</p>
+                </div>
+              </div>
+              
+              <div class="col-md-6 mb-4">
+                <div class="specialty-card">
+                  <div class="specialty-icon">
+                    <i class="fas fa-headset"></i>
+                  </div>
+                  <h4>Customer Support</h4>
+                  <p>Lorem ipsum dolere amet haere sint rullam est vidicos et pulcou.</p>
+                </div>
+              </div>
+              
+              <div class="col-md-6 mb-4">
+                <div class="specialty-card">
+                  <div class="specialty-icon">
+                    <i class="fas fa-mobile-alt"></i>
+                  </div>
+                  <h4>Responsive Design</h4>
+                  <p>Lorem ipsum dolere amet haere sint rullam est vidicos et pulcou.</p>
+                </div>
+              </div>
+              
+              <div class="col-md-6 mb-4">
+                <div class="specialty-card">
+                  <div class="specialty-icon">
+                    <i class="fab fa-figma"></i>
+                  </div>
+                  <h4>PSD Design</h4>
+                  <p>Lorem ipsum dolere amet haere sint rullam est vidicos et pulcou.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-6">
+          <div class="image-container">
+            <img src="./images/1.png" alt="Designer" class="img-fluid rounded">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section id="stats" class="py-5">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-3 col-6 mb-4 mb-md-0">
+          <div class="stat-item">
+            <h2 class="counter">135</h2>
+            <p>Finished Projects</p>
+          </div>
+        </div>
+        
+        <div class="col-md-3 col-6 mb-4 mb-md-0">
+          <div class="stat-item">
+            <h2 class="counter">225</h2>
+            <p>Working Hours</p>
+          </div>
+        </div>
+        
+        <div class="col-md-3 col-6">
+          <div class="stat-item">
+            <h2 class="counter">115</h2>
+            <p>Online Support</p>
+          </div>
+        </div>
+        
+        <div class="col-md-3 col-6">
+          <div class="stat-item">
+            <h2 class="counter">272</h2>
+            <p>Happy Customers</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="py-5">
+    <div class="container">
+      <div class="section-heading text-center mb-5">
+        <h2>My Success Work</h2>
+      </div>
+      
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="portfolio-item">
+            <img src="https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Portfolio" class="img-fluid">
+            <div class="portfolio-overlay">
+              <h4>Web Design Project</h4>
+              <p>UI/UX Design</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-4 mb-4">
+          <div class="portfolio-item">
+            <img src="https://images.pexels.com/photos/1029757/pexels-photo-1029757.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Portfolio" class="img-fluid">
+            <div class="portfolio-overlay">
+              <h4>App Design</h4>
+              <p>Mobile UI</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-4 mb-4">
+          <div class="portfolio-item">
+            <img src="https://images.pexels.com/photos/4348401/pexels-photo-4348401.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Portfolio" class="img-fluid">
+            <div class="portfolio-overlay">
+              <h4>Brand Identity</h4>
+              <p>Logo Design</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-4 mb-4">
+          <div class="portfolio-item">
+            <img src="https://images.pexels.com/photos/3182773/pexels-photo-3182773.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Portfolio" class="img-fluid">
+            <div class="portfolio-overlay">
+              <h4>Web Development</h4>
+              <p>E-commerce</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-4 mb-4">
+          <div class="portfolio-item">
+            <img src="https://images.pexels.com/photos/2115217/pexels-photo-2115217.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Portfolio" class="img-fluid">
+            <div class="portfolio-overlay">
+              <h4>UI Design</h4>
+              <p>Dashboard</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-4 mb-4">
+          <div class="portfolio-item">
+            <img style="height: 280px; width:1260px;" src="https://i.pinimg.com/736x/40/77/e5/4077e54fb6d94d7c8ef7b9afe7f8fe73.jpg" alt="Portfolio" class="img-fluid">
+            <div class="portfolio-overlay">
+              <h4>Photography</h4>
+              <p>Product Photography</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Clients Section -->
+  <section id="clients" class="py-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-3 col-6 mb-4 mb-md-0 text-center">
+          <div class="client-logo">
+            <i class="fas fa-award client-icon"></i>
+            <p>QUALITY</p>
+          </div>
+        </div>
+        
+        <div class="col-md-3 col-6 mb-4 mb-md-0 text-center">
+          <div class="client-logo">
+            <i class="fas fa-spa client-icon"></i>
+            <p>MASSAGE SPA</p>
+          </div>
+        </div>
+        
+        <div class="col-md-3 col-6 text-center">
+          <div class="client-logo">
+            <i class="fas fa-certificate client-icon"></i>
+            <p>TRUSTED</p>
+          </div>
+        </div>
+        
+        <div class="col-md-3 col-6 text-center">
+          <div class="client-logo">
+            <i class="fas fa-leaf client-icon"></i>
+            <p>NATURAL</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer" class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center mb-4">
+          <div class="footer-logo">
+            <i class="fas fa-layer-group me-2"></i> UI Portfolio
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-contact">
+        <p><i class="fas fa-phone-alt"></i> +12 345 678 900</p>
+        <p><i class="fas fa-envelope"></i> info@example.com</p>
+        <p><i class="fas fa-map-marker-alt"></i> 208 Avenue Street, UK - 62617</p>
+      </div>
+      
+      <div class="footer-social">
+        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-pinterest"></i></a>
+      </div>
+      
+      <div class="copyright">
+        <p>© 2022 UI Portfolio. All Rights Reserved</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <a href="#" class="back-to-top">
+    <i class="fas fa-chevron-up"></i>
+  </a>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <script>
+    // Wait for DOM to be fully loaded
+    document.addEventListener('DOMContentLoaded', function() {
+      // Sticky navbar
+      const navbar = document.querySelector('.navbar');
+      
+      window.addEventListener('scroll', function() {
+        if (window.scrollY > 50) {
+          navbar.classList.add('sticky');
+        } else {
+          navbar.classList.remove('sticky');
+        }
+      });
+      
+      // Back to top button
+      const backToTopButton = document.querySelector('.back-to-top');
+      
+      window.addEventListener('scroll', function() {
+        if (window.scrollY > 300) {
+          backToTopButton.classList.add('active');
+        } else {
+          backToTopButton.classList.remove('active');
+        }
+      });
+      
+      backToTopButton.addEventListener('click', function(e) {
+        e.preventDefault();
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      });
+      
+      // Smooth scrolling for navigation links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          if (this.getAttribute('href') !== '#') {
+            e.preventDefault();
+            
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+              window.scrollTo({
+                top: target.offsetTop - 70,
+                behavior: 'smooth'
+              });
+              
+              // Close mobile menu when clicking a link
+              const navbarCollapse = document.querySelector('.navbar-collapse');
+              if (navbarCollapse.classList.contains('show')) {
+                const bsCollapse = new bootstrap.Collapse(navbarCollapse);
+                bsCollapse.hide();
+              }
+            }
+          }
+        });
+      });
+      
+      // Count Up Animation
+      const counters = document.querySelectorAll('.counter');
+      const speed = 200;
+      
+      const countUp = () => {
+        counters.forEach(counter => {
+          const target = +counter.innerText;
+          const count = 0;
+          const inc = target / speed;
+          
+          if (count < target) {
+            counter.innerText = Math.ceil(count + inc);
+            setTimeout(countUp, 1);
+          } else {
+            counter.innerText = target;
+          }
+        });
+      };
+      
+      // Initialize counters when they come into view
+      const options = {
+        threshold: 0.7
+      };
+      
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            countUp();
+            observer.unobserve(entry.target);
+          }
+        });
+      }, options);
+      
+      const statsSection = document.querySelector('#stats');
+      if (statsSection) {
+        observer.observe(statsSection);
+      };
+      
+      // Portfolio hover effect for touch devices
+      const portfolioItems = document.querySelectorAll('.portfolio-item');
+      
+      portfolioItems.forEach(item => {
+        item.addEventListener('touchstart', function() {
+          this.classList.add('touched');
+        }, {passive: true});
+        
+        item.addEventListener('touchend', function() {
+          setTimeout(() => {
+            this.classList.remove('touched');
+          }, 500);
+        }, {passive: true});
+      });
+      
+      // Search functionality
+      const searchToggle = document.getElementById('search-toggle');
+      const searchModal = document.getElementById('search-modal');
+      const closeSearch = document.getElementById('close-search');
+      const searchInput = document.getElementById('search-input');
+      const searchResults = document.getElementById('search-results');
+      
+      // Sample search data
+      const searchData = [
+        {
+          title: "Web Development Services",
+          content: "Our professional web development services create responsive, modern websites.",
+          link: "#services"
+        },
+        {
+          title: "UI/UX Design Portfolio",
+          content: "Check out our latest UI/UX design projects in the portfolio section.",
+          link: "#portfolio"
+        },
+        {
+          title: "About John Watson",
+          content: "Learn more about John Watson's background and skills.",
+          link: "#about"
+        },
+        {
+          title: "Contact Information",
+          content: "Get in touch with us for your next project.",
+          link: "#contact"
+        },
+        {
+          title: "Photography Services",
+          content: "Professional photography services for your business needs.",
+          link: "#services"
+        }
+      ];
+      
+      // Toggle search modal
+      searchToggle.addEventListener('click', function(e) {
+        e.preventDefault();
+        searchModal.classList.add('active');
+        searchInput.focus();
+      });
+      
+      closeSearch.addEventListener('click', function() {
+        searchModal.classList.remove('active');
+        searchResults.innerHTML = '';
+        searchResults.classList.remove('active');
+      });
+      
+      // Close search when clicking outside
+      searchModal.addEventListener('click', function(e) {
+        if (e.target === searchModal) {
+          searchModal.classList.remove('active');
+          searchResults.innerHTML = '';
+          searchResults.classList.remove('active');
+        }
+      });
+      
+      // Search functionality
+      searchInput.addEventListener('input', function() {
+        const searchTerm = this.value.toLowerCase();
+        searchResults.innerHTML = '';
+        
+        if (searchTerm.length > 2) {
+          const results = searchData.filter(item => 
+            item.title.toLowerCase().includes(searchTerm) || 
+            item.content.toLowerCase().includes(searchTerm)
+          );
+          
+          if (results.length > 0) {
+            results.forEach(result => {
+              const resultItem = document.createElement('div');
+              resultItem.className = 'search-result-item';
+              resultItem.innerHTML = `
+                <a href="${result.link}">
+                  <h4>${result.title}</h4>
+                  <p>${result.content}</p>
+                </a>
+              `;
+              searchResults.appendChild(resultItem);
+            });
+            searchResults.classList.add('active');
+          } else {
+            const noResults = document.createElement('div');
+            noResults.className = 'search-result-item';
+            noResults.textContent = 'No results found';
+            searchResults.appendChild(noResults);
+            searchResults.classList.add('active');
+          }
+        } else {
+          searchResults.classList.remove('active');
+        }
+      });
+      
+      // Close search when a result is clicked
+      searchResults.addEventListener('click', function(e) {
+        if (e.target.tagName === 'A') {
+          searchModal.classList.remove('active');
+          searchInput.value = '';
+          searchResults.innerHTML = '';
+          searchResults.classList.remove('active');
+        }
+      });
+      
+      // Theme Toggle Functionality
+      const themeToggle = document.getElementById('theme-toggle');
+      const themeIcon = themeToggle.querySelector('i');
+      const htmlElement = document.documentElement;
+      
+      // Check for saved theme preference or use preferred color scheme
+      const savedTheme = localStorage.getItem('theme') || 
+                       (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      setTheme(savedTheme);
+      
+      themeToggle.addEventListener('click', function(e) {
+        e.preventDefault();
+        const currentTheme = htmlElement.getAttribute('data-theme');
+        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        setTheme(newTheme);
+        localStorage.setItem('theme', newTheme);
+      });
+      
+      function setTheme(theme) {
+        htmlElement.setAttribute('data-theme', theme);
+        if (theme === 'dark') {
+          themeIcon.classList.remove('fa-moon');
+          themeIcon.classList.add('fa-sun');
+        } else {
+          themeIcon.classList.remove('fa-sun');
+          themeIcon.classList.add('fa-moon');
+        }
+      }
+      
+      // Animate progress bars when skills section comes into view
+      const skillBars = document.querySelectorAll('.progress-bar');
+      const skillsSection = document.querySelector('#skills');
+      
+      const skillObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            skillBars.forEach(bar => {
+              const width = bar.style.width;
+              bar.style.width = '0';
+              setTimeout(() => {
+                bar.style.width = width;
+              }, 100);
+            });
+            skillObserver.unobserve(entry.target);
+          }
+        });
+      }, {threshold: 0.5});
+      
+      if (skillsSection) {
+        skillObserver.observe(skillsSection);
+      }
+      // Add this to your script section (around line 2000)
+document.addEventListener('DOMContentLoaded', function() {
+  // Handle all Hire Me buttons
+  const hireMeButtons = document.querySelectorAll('[href*="mailto:victorgathecha@gmail.com"]');
+  
+  hireMeButtons.forEach(button => {
+    button.addEventListener('click', function(e) {
+      e.preventDefault();
+      window.open('mailto:victorgathecha@gmail.com?subject=Job%20Opportunity&body=Hello%20John,%20I%20would%20like%20to%20discuss%20a%20potential%20opportunity.', '_blank');
+    });
+  });
+});
+      // Close dropdown when clicking outside
+      document.addEventListener('click', function(e) {
+        const dropdowns = document.querySelectorAll('.dropdown-menu');
+        dropdowns.forEach(dropdown => {
+          if (!dropdown.parentElement.contains(e.target)) {
+            dropdown.classList.remove('show');
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
