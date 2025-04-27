@@ -529,7 +529,7 @@
     </div>
   </footer>
 
-  <!-- Back to Top Button -->
+
   <a href="#" class="back-to-top">
     <i class="fas fa-chevron-up"></i>
   </a>
@@ -538,9 +538,9 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   
   <script>
-    // Wait for DOM to be fully loaded
+    
     document.addEventListener('DOMContentLoaded', function() {
-      // Sticky navbar
+    
       const navbar = document.querySelector('.navbar');
       
       window.addEventListener('scroll', function() {
@@ -551,7 +551,7 @@
         }
       });
       
-      // Back to top button
+    
       const backToTopButton = document.querySelector('.back-to-top');
       
       window.addEventListener('scroll', function() {
@@ -570,7 +570,7 @@
         });
       });
       
-      // Smooth scrolling for navigation links
+      
       document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
           if (this.getAttribute('href') !== '#') {
@@ -583,7 +583,7 @@
                 behavior: 'smooth'
               });
               
-              // Close mobile menu when clicking a link
+             
               const navbarCollapse = document.querySelector('.navbar-collapse');
               if (navbarCollapse.classList.contains('show')) {
                 const bsCollapse = new bootstrap.Collapse(navbarCollapse);
@@ -594,7 +594,7 @@
         });
       });
       
-      // Count Up Animation
+     
       const counters = document.querySelectorAll('.counter');
       const speed = 200;
       
@@ -613,7 +613,7 @@
         });
       };
       
-      // Initialize counters when they come into view
+      
       const options = {
         threshold: 0.7
       };
@@ -632,7 +632,7 @@
         observer.observe(statsSection);
       };
       
-      // Portfolio hover effect for touch devices
+     
       const portfolioItems = document.querySelectorAll('.portfolio-item');
       
       portfolioItems.forEach(item => {
@@ -647,14 +647,14 @@
         }, {passive: true});
       });
       
-      // Search functionality
+      
       const searchToggle = document.getElementById('search-toggle');
       const searchModal = document.getElementById('search-modal');
       const closeSearch = document.getElementById('close-search');
       const searchInput = document.getElementById('search-input');
       const searchResults = document.getElementById('search-results');
       
-      // Sample search data
+ 
       const searchData = [
         {
           title: "Web Development Services",
@@ -683,7 +683,7 @@
         }
       ];
       
-      // Toggle search modal
+     
       searchToggle.addEventListener('click', function(e) {
         e.preventDefault();
         searchModal.classList.add('active');
@@ -696,7 +696,7 @@
         searchResults.classList.remove('active');
       });
       
-      // Close search when clicking outside
+    
       searchModal.addEventListener('click', function(e) {
         if (e.target === searchModal) {
           searchModal.classList.remove('active');
@@ -705,7 +705,7 @@
         }
       });
       
-      // Search functionality
+      
       searchInput.addEventListener('input', function() {
         const searchTerm = this.value.toLowerCase();
         searchResults.innerHTML = '';
@@ -741,7 +741,7 @@
         }
       });
       
-      // Close search when a result is clicked
+     
       searchResults.addEventListener('click', function(e) {
         if (e.target.tagName === 'A') {
           searchModal.classList.remove('active');
@@ -751,12 +751,12 @@
         }
       });
       
-      // Theme Toggle Functionality
+      
       const themeToggle = document.getElementById('theme-toggle');
       const themeIcon = themeToggle.querySelector('i');
       const htmlElement = document.documentElement;
       
-      // Check for saved theme preference or use preferred color scheme
+      
       const savedTheme = localStorage.getItem('theme') || 
                        (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
       setTheme(savedTheme);
@@ -780,7 +780,7 @@
         }
       }
       
-      // Animate progress bars when skills section comes into view
+      
       const skillBars = document.querySelectorAll('.progress-bar');
       const skillsSection = document.querySelector('#skills');
       
@@ -802,9 +802,9 @@
       if (skillsSection) {
         skillObserver.observe(skillsSection);
       }
-      // Add this to your script section (around line 2000)
+      
 document.addEventListener('DOMContentLoaded', function() {
-  // Handle all Hire Me buttons
+  
   const hireMeButtons = document.querySelectorAll('[href*="mailto:victorgathecha@gmail.com"]');
   
   hireMeButtons.forEach(button => {
@@ -814,7 +814,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
-      // Close dropdown when clicking outside
+     
       document.addEventListener('click', function(e) {
         const dropdowns = document.querySelectorAll('.dropdown-menu');
         dropdowns.forEach(dropdown => {
