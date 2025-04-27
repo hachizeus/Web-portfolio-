@@ -78,30 +78,51 @@
     </div>
   </div>
 
-  <!-- Hero Section -->
-  <section id="hero" class="py-5">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-6">
-          <div class="hero-content">
-            <h4 class="mb-2">Hi, I'm John Watson</h4>
-            <h1 class="mb-4">Web Designer</h1>
-            <p class="mb-4">I love Graphic design and Photography and have been working on my portfolio since 2016. I can give your business a new Creative start right away!</p>
-            <div class="hero-buttons">
-              <a href="mailto:victorgathecha@gmail.com?subject=Job%20Opportunity&body=Hello%20John,%20I%20would%20like%20to%20discuss%20a%20potential%20opportunity." class="btn btn-primary me-3" target="_blank">Hire me</a>
+<!-- Hero Section -->
+<section id="hero" class="py-5">
+  <div class="container position-relative"> <!-- Added position-relative to container -->
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+        <div class="hero-content">
+          <h4 class="mb-2">Hi, I'm John Watson</h4>
+          <h1 class="mb-4">Web Designer</h1>
+          <p class="mb-4">I love Graphic design and Photography and have been working on my portfolio since 2016. I can give your business a new Creative start right away!</p>
+          <div class="hero-buttons">
+            <a href="mailto:victorgathecha@gmail.com?subject=Job%20Opportunity&body=Hello%20John,%20I%20would%20like%20to%20discuss%20a%20potential%20opportunity." class="btn btn-primary me-3" target="_blank">Hire me</a>
+            <a href="#portfolio" 
+   class="btn btn-outline-white text-white" 
+   style="color: white; border: 2px solid transparent; padding: 10px 20px; text-decoration: none; transition: all 0.3s ease;"
+   onmouseover="this.style.color='black'; this.style.border='2px solid white';"
+   onmouseout="this.style.color='white'; this.style.border='2px solid transparent';">
+   My Portfolio
+</a>
 
-              <a href="#portfolio" class="btn btn-outline-light">My Portfolio</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <div class="hero-image">
-            <img style="margin-top: 50px;margin-bottom:-45px;height:600px;" src="./images/1.png" alt="John Watson" class="img-fluid">
           </div>
         </div>
       </div>
+      <div class="col-lg-6">
+        <div class="hero-image">
+          <img style="margin-top: 50px;margin-bottom:-45px;height:600px;" src="./images/1.png" alt="John Watson" class="img-fluid">
+        </div>
+      </div>
     </div>
-  </section>
+
+    <div class="hero-nav" style="position: absolute; top: 40%; right: -110px; transform: translateY(-50%); background-color: #2c3e50; border-radius: 10px 0 0 10px; padding: -10px;">
+      <button class="nav-btn" style="display: block; color: white; background: none; border: none; padding: 10px; font-size: 18px; margin-left:22px;">
+        <i class="fas fa-arrow-right"></i>
+      </button>
+      <button class="nav-btn" style="display: block; color: white; background: none; border: none; padding: 10px; font-size: 11px;margin-left:15px;">
+        <i class="fas fa-arrow-left"></i> <br>Back
+      </button>
+      <button class="nav-btn" style="display: block; color: white; background: none; border: none; padding: 10px; font-size: 11px;">
+        <i class="fas fa-download"></i> <br>Download
+      </button>
+      <button class="nav-btn" style="display: block; color: white; background: none; border: none; padding: 10px; font-size: 12px;margin-left:22px;">
+        <i class="fas fa-shopping-cart"></i> <br>Buy
+      </button>
+    </div>
+  </div>
+</section>
 
   <!-- About Section -->
   <section id="about" class="py-5">
